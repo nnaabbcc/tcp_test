@@ -1,9 +1,4 @@
 
-find_package(Qt5 COMPONENTS Widgets Network REQUIRED)
-
-SET(CMAKE_AUTOMOC ON)
-SET(CMAKE_AUTOUIC ON)
-
 add_executable(tcp_test WIN32
     main.cpp
     mainwindow.cpp

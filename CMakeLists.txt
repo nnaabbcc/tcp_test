@@ -8,5 +8,10 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-add_subdirectory(src)
+find_package(Qt5 COMPONENTS Widgets Network REQUIRED)
 
+SET(CMAKE_AUTOMOC ON)
+SET(CMAKE_AUTOUIC ON)
+
+add_subdirectory(tcp_test)
+add_subdirectory(udp_test)

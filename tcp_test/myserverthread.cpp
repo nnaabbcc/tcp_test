@@ -20,8 +20,8 @@ void MyServerThread::run()
     char c = 0x00;
     while (true)
     {
-        const int size = 4000;
-        QByteArray block(size, c);
+        const int size = 400000;
+        static QByteArray block(size, c);
         c++;
         c = c % 0x7F;
         tcpSocket.write(block);
